@@ -1,0 +1,1246 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 01:37:42 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/23 01:37:50 auth_controller.go:236: Message: Successful logging up of user with user id: 65acc40f8d881fde9b010079 and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/23 - 01:37:50 | 200 |    1.2252258s |             ::1 | POST     "/api/auth/login"
+2024/01/23 01:39:13 auth_controller.go:236: Message: Successful logging up of user with user id: 65acc40f8d881fde9b010079 and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/23 - 01:39:13 | 200 |    1.2366648s |             ::1 | POST     "/api/auth/login"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:06:55 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/23 20:07:30 auth_controller.go:61: 
+Error: User with same email id: ishansaha05@gmail.com, already exists.
+[GIN] 2024/01/23 - 20:07:30 | 400 |     14.2382ms |             ::1 | POST     "/api/auth/signup"
+2024/01/23 20:08:04 auth_controller.go:236: Message: Successful logging up of user with user id: 65acc40f8d881fde9b010079 and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/23 - 20:08:04 | 200 |    1.6049599s |             ::1 | POST     "/api/auth/login"
+2024/01/23 20:08:41 auth_controller.go:236: Message: Successful logging up of user with user id: 65acc40f8d881fde9b010079 and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/23 - 20:08:41 | 200 |    1.6428347s |             ::1 | POST     "/api/auth/login"
+2024/01/23 20:09:04 auth_controller.go:236: Message: Successful logging up of user with user id: 65acc40f8d881fde9b010079 and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/23 - 20:09:04 | 200 |    1.6407947s |             ::1 | POST     "/api/auth/login"
+2024/01/23 20:09:20 auth_controller.go:236: Message: Successful logging up of user with user id: 65acc40f8d881fde9b010079 and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/23 - 20:09:20 | 200 |    1.9213399s |             ::1 | POST     "/api/auth/login"
+2024/01/23 20:09:41 auth_controller.go:61: 
+Error: User with same email id: ishansaha05@gmail.com, already exists.
+[GIN] 2024/01/23 - 20:09:41 | 400 |      3.5329ms |             ::1 | POST     "/api/auth/signup"
+2024/01/23 20:09:45 auth_controller.go:236: Message: Successful logging up of user with user id: 65acc40f8d881fde9b010079 and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/23 - 20:09:45 | 200 |    1.6561814s |             ::1 | POST     "/api/auth/login"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:11:59 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/23 20:12:07 auth_controller.go:61: 
+Error: User with same email id: ishansaha05@gmail.com, already exists.
+[GIN] 2024/01/23 - 20:12:07 | 400 |      31.224ms |             ::1 | POST     "/api/auth/signup"
+2024/01/23 20:12:12 auth_controller.go:236: Message: Successful logging up of user with user id: 65acc40f8d881fde9b010079 and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/23 - 20:12:12 | 200 |    1.5216504s |             ::1 | POST     "/api/auth/login"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:20:34 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN] 2024/01/23 - 20:21:32 | 200 |     55.0984ms |             ::1 | GET      "/api/test/65acc201e805b2380a4cfd2f"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:23:55 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN] 2024/01/23 - 20:24:03 | 200 |     18.8382ms |             ::1 | GET      "/api/test/65acc201e805b2380a4cfd2f"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:26:23 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN] 2024/01/23 - 20:26:50 | 200 |     22.2817ms |             ::1 | GET      "/api/test/65acc201e805b2380a4cfd2f"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:27:08 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN] 2024/01/23 - 20:27:19 | 200 |     15.5947ms |             ::1 | GET      "/api/test/65acc201e805b2380a4cfd2f"
+[GIN] 2024/01/23 - 20:27:56 | 200 |      4.0043ms |             ::1 | GET      "/api/test/ishansaha05@gmail.com"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:28:24 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN] 2024/01/23 - 20:29:05 | 200 |     22.1694ms |             ::1 | GET      "/api/test/ishansaha05@gmail.com"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:29:24 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN] 2024/01/23 - 20:29:38 | 200 |     17.1091ms |             ::1 | GET      "/api/test/ishansaha05@gmail.com"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:32:57 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN] 2024/01/23 - 20:33:08 | 200 |     15.2878ms |             ::1 | GET      "/api/test/ishansaha05@gmail.com"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:33:30 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN] 2024/01/23 - 20:33:54 | 200 |     19.3173ms |             ::1 | GET      "/api/test/ishansaha05@gmail.com"
+[GIN] 2024/01/23 - 20:34:00 | 200 |      3.1699ms |             ::1 | GET      "/api/test/ishansaha05@gmail.c"
+[GIN] 2024/01/23 - 20:34:04 | 200 |      40.514ms |             ::1 | GET      "/api/test/ishansaha05@gmail.com"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:38:58 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/23 20:39:08 auth_controller.go:139: 
+Message: Successful signing up of user with user id: 65afd69410c57c29f1bc92be and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/23 - 20:39:08 | 200 |    1.7508575s |             ::1 | POST     "/api/auth/signup"
+2024/01/23 20:39:27 auth_controller.go:139: 
+Message: Successful signing up of user with user id: 65afd6a710c57c29f1bc92c0 and user email id: isasdasd05@gmail.com
+[GIN] 2024/01/23 - 20:39:27 | 200 |    1.5772433s |             ::1 | POST     "/api/auth/signup"
+[GIN] 2024/01/23 - 20:40:12 | 200 |      4.4412ms |             ::1 | GET      "/api/test/Akash"
+[GIN] 2024/01/23 - 20:40:22 | 200 |      5.0253ms |             ::1 | GET      "/api/test/Ishan"
+[GIN] 2024/01/23 - 20:40:25 | 200 |      2.5148ms |             ::1 | GET      "/api/test/Ishanssd"
+[GIN] 2024/01/23 - 20:40:56 | 200 |       6.683ms |             ::1 | GET      "/api/test/Ishan"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:41:07 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN] 2024/01/23 - 20:41:18 | 200 |     16.2859ms |             ::1 | GET      "/api/test/Ishan"
+[GIN] 2024/01/23 - 20:41:33 | 200 |       4.693ms |             ::1 | GET      "/api/test/Ishan"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 20:41:58 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN] 2024/01/23 - 20:42:10 | 200 |     16.6853ms |             ::1 | GET      "/api/test/Ishan"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/test/:id             --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Test.func3 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/23 23:39:44 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 00:47:19 auth_controller.go:61: 
+Error: User with same email id: ishansaha05@gmail.com, already exists.
+[GIN] 2024/01/24 - 00:47:19 | 400 |     18.8537ms |             ::1 | POST     "/api/auth/signup"
+2024/01/24 00:47:28 auth_controller.go:139: 
+Message: Successful signing up of user with user id: 65b010c87be3477822c2b38c and user email id: ishansahaofficial@gmail.com
+[GIN] 2024/01/24 - 00:47:28 | 200 |    1.1322517s |             ::1 | POST     "/api/auth/signup"
+2024/01/24 00:47:31 auth_controller.go:61: 
+Error: User with same email id: ishansahaofficial@gmail.com, already exists.
+[GIN] 2024/01/24 - 00:47:31 | 400 |      1.5668ms |             ::1 | POST     "/api/auth/signup"
+2024/01/24 00:48:12 auth_controller.go:237: Message: Successful logging up of user with user id: 65afd69410c57c29f1bc92be and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/24 - 00:48:12 | 200 |    1.2035665s |             ::1 | POST     "/api/auth/login"
+2024/01/24 00:48:42 auth_controller.go:237: Message: Successful logging up of user with user id: 65b010c87be3477822c2b38c and user email id: ishansahaofficial@gmail.com
+[GIN] 2024/01/24 - 00:48:42 | 200 |    1.2843023s |             ::1 | POST     "/api/auth/login"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 01:01:15 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 01:01:21 user_controller.go:335: Message: Successfully inserted new note with note id: ObjectID("65b014094fc4b7466dcc494a")
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 01:03:53 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 01:08:28 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 01:49:52 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 500
+2024/01/24 01:50:00 user_controller.go:232: Error: Problem while binding note from json.
+	Error: json: Unmarshal(non-pointer models.NoteData)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 01:50:42 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 01:50:47 user_controller.go:348: Error: Same note already exists in the database.
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 01:51:09 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 01:51:17 user_controller.go:343: Message:  Successfully created new note with note id: ObjectID("65b01fbd5c789224ddde9781") and unique header: 65b010c87be3477822c2b38cTest-Notes3
+[GIN] 2024/01/24 - 01:51:17 | 200 |     14.0117ms |             ::1 | POST     "/api/notes"
+2024/01/24 01:51:33 auth_controller.go:236: Message: Successful logging up of user with user id: 65afd69410c57c29f1bc92be and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/24 - 01:51:33 | 200 |    1.1871696s |             ::1 | POST     "/api/auth/login"
+2024/01/24 01:51:47 user_controller.go:343: Message:  Successfully created new note with note id: ObjectID("65b01fdb5c789224ddde9783") and unique header: 65afd69410c57c29f1bc92beTest-Notes3
+[GIN] 2024/01/24 - 01:51:47 | 200 |      5.8111ms |             ::1 | POST     "/api/notes"
+2024/01/24 01:51:51 user_controller.go:348: Error: Same note already exists in the database.
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 02:10:09 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 02:10:22 auth_controller.go:236: Message: Successful logging up of user with user id: 65b010c87be3477822c2b38c and user email id: ishansahaofficial@gmail.com
+[GIN] 2024/01/24 - 02:10:22 | 200 |    1.2605584s |             ::1 | POST     "/api/auth/login"
+2024/01/24 02:10:34 user_controller.go:118: Error: No such note present. Problem while decoding the note.
+	Error: mongo: no documents in result
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 02:14:18 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 02:14:25 user_controller.go:135: Message: Note belongs to user with user id: 65b010c87be3477822c2b38c and present in the db with notes id: 65b014094fc4b7466dcc494a. It is successfully shared.
+[GIN] 2024/01/24 - 02:14:25 | 200 |     10.3096ms |             ::1 | GET      "/api/notes/65b014094fc4b7466dcc494a"
+2024/01/24 02:14:43 user_controller.go:135: Message: Note belongs to user with user id: 65b010c87be3477822c2b38c and present in the db with notes id: 65b01fbd5c789224ddde9781. It is successfully shared.
+[GIN] 2024/01/24 - 02:14:43 | 200 |      2.4324ms |             ::1 | GET      "/api/notes/65b01fbd5c789224ddde9781"
+2024/01/24 02:14:57 user_controller.go:142: Message: Note does not belong to user with user id: 65b010c87be3477822c2b38c and it is also not sharable publically. Hence, it cannot be shared.
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 02:15:05 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 02:15:27 auth_controller.go:236: Message: Successful logging up of user with user id: 65afd69410c57c29f1bc92be and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/24 - 02:15:27 | 200 |     1.207907s |             ::1 | POST     "/api/auth/login"
+2024/01/24 02:15:53 user_controller.go:266: Message:  Successfully created new note with note id: ObjectID("65b02581dec8a8c63d93187d") and unique header: 65afd69410c57c29f1bc92beTest-Notes-89
+[GIN] 2024/01/24 - 02:15:53 | 200 |      6.3156ms |             ::1 | POST     "/api/notes"
+2024/01/24 02:16:16 user_controller.go:139: Message: Note does not belong to user with user with user id: 65b010c87be3477822c2b38c, but sharable and thus successfully shared notes with notes id: 65b02581dec8a8c63d93187d
+[GIN] 2024/01/24 - 02:16:16 | 200 |      3.3461ms |             ::1 | GET      "/api/notes/65b02581dec8a8c63d93187d"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 02:19:14 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 02:19:34 user_controller.go:79: Message: Successfully responded with the list of all notes for the authenticated user.
+[GIN] 2024/01/24 - 02:19:34 | 200 |     20.8583ms |             ::1 | GET      "/api/notes"
+2024/01/24 02:20:06 user_controller.go:79: Message: Successfully responded with the list of all notes for the authenticated user.
+[GIN] 2024/01/24 - 02:20:06 | 200 |      1.6767ms |             ::1 | GET      "/api/notes"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:04:15 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:04:48 auth_controller.go:236: Message: Successful logging up of user with user id: 65afd69410c57c29f1bc92be and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/24 - 21:04:48 | 200 |    1.3161827s |             ::1 | POST     "/api/auth/login"
+2024/01/24 21:05:03 user_controller.go:153: Message: Note does not belong to user with user id: 65afd69410c57c29f1bc92be and it is also not sharable publically. Hence, it cannot be shared.
+[GIN] 2024/01/24 - 21:05:03 | 400 |      2.4635ms |             ::1 | GET      "/api/notes/65b014094fc4b7466dcc494a"
+2024/01/24 21:06:17 user_controller.go:391: Error: Problem while upating data.
+	Error: update document must contain key beginning with '$'
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:07:12 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:07:34 user_controller.go:338: Error: Notes is not accessible to the user with user id: 65afd69410c57c29f1bc92be
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:12:55 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:13:07 auth_controller.go:236: Message: Successful logging up of user with user id: 65b010c87be3477822c2b38c and user email id: ishansahaofficial@gmail.com
+[GIN] 2024/01/24 - 21:13:07 | 200 |    1.4947918s |             ::1 | POST     "/api/auth/login"
+2024/01/24 21:13:23 user_controller.go:402: Message: Updated notes with notes id: 65b014094fc4b7466dcc494a successfully.
+[GIN] 2024/01/24 - 21:13:23 | 200 |      6.6158ms |             ::1 | PUT      "/api/notes/65b014094fc4b7466dcc494a"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:15:52 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:16:27 user_controller.go:402: Message: Updated notes with notes id: 65b014094fc4b7466dcc494a successfully.
+[GIN] 2024/01/24 - 21:16:27 | 200 |     17.6538ms |             ::1 | PUT      "/api/notes/65b014094fc4b7466dcc494a"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search?q=:query      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:21:45 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:21:53 auth_controller.go:236: Message: Successful logging up of user with user id: 65afd69410c57c29f1bc92be and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/24 - 21:21:53 | 200 |    1.4362682s |             ::1 | POST     "/api/auth/login"
+[GIN] 2024/01/24 - 21:23:25 | 404 |         521µs |             ::1 | GET      "/api/search?q=sike%20n"
+[GIN] 2024/01/24 - 21:23:58 | 404 |       578.4µs |             ::1 | GET      "/api/search?q=si"
+[GIN] 2024/01/24 - 21:24:02 | 404 |       686.3µs |             ::1 | GET      "/api/search?si"
+[GIN] 2024/01/24 - 21:26:07 | 404 |       999.3µs |             ::1 | GET      "/api/search?q=si%20n"
+[GIN] 2024/01/24 - 21:27:20 | 404 |       641.5µs |             ::1 | GET      "/api/search?q=si"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:28:26 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:28:44 user_controller.go:673: Message: Successfully find all the notes with the keyword: si
+[GIN] 2024/01/24 - 21:28:44 | 200 |     74.6857ms |             ::1 | GET      "/api/search?q=si"
+2024/01/24 21:29:16 user_controller.go:673: Message: Successfully find all the notes with the keyword: Si
+[GIN] 2024/01/24 - 21:29:16 | 200 |      2.7575ms |             ::1 | GET      "/api/search?q=Si"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:30:27 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:30:37 user_controller.go:674: Message: Successfully find all the notes with the keyword: Si
+[GIN] 2024/01/24 - 21:30:37 | 200 |     21.9034ms |             ::1 | GET      "/api/search?q=Si"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:33:18 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:33:42 user_controller.go:674: Message: Successfully find all the notes with the keyword: Si
+[GIN] 2024/01/24 - 21:33:42 | 200 |     11.5656ms |             ::1 | GET      "/api/search?q=Si"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:34:40 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:34:56 user_controller.go:675: Message: Successfully find all the notes with the keyword: Si
+[GIN] 2024/01/24 - 21:34:56 | 200 |     13.9204ms |             ::1 | GET      "/api/search?q=Si"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:36:44 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:36:58 user_controller.go:671: Message: Successfully find all the notes with the keyword: Si
+[GIN] 2024/01/24 - 21:36:58 | 200 |     11.1102ms |             ::1 | GET      "/api/search?q=Si"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:57:38 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:57:47 user_controller.go:466: Error: User with user id: 65afd69410c57c29f1bc92be is not allowed to delete the notes with note id: 65b014094fc4b7466dcc494a
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 21:58:21 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 21:58:28 auth_controller.go:236: Message: Successful logging up of user with user id: 65b010c87be3477822c2b38c and user email id: ishansahaofficial@gmail.com
+[GIN] 2024/01/24 - 21:58:28 | 200 |    1.4141164s |             ::1 | POST     "/api/auth/login"
+2024/01/24 21:58:37 user_controller.go:462: Message: Successfully deleted note with note id: 65b014094fc4b7466dcc494a by the user with user id: 65b010c87be3477822c2b38c
+[GIN] 2024/01/24 - 21:58:37 | 200 |      3.2312ms |             ::1 | DELETE   "/api/notes/65b014094fc4b7466dcc494a"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 22:15:45 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 22:24:49 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 22:24:57 auth_controller.go:236: Message: Successful logging up of user with user id: 65afd69410c57c29f1bc92be and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/24 - 22:24:57 | 200 |    1.3869198s |             ::1 | POST     "/api/auth/login"
+2024/01/24 22:27:57 authentication.go:19: Error: No token provided, authentication cannot be done.
+[GIN] 2024/01/24 - 22:27:57 | 500 |       651.4µs |             ::1 | GET      "/api/notes/65b02581dec8a8c63d93187d/share"
+2024/01/24 22:28:15 auth_controller.go:236: Message: Successful logging up of user with user id: 65afd69410c57c29f1bc92be and user email id: ishansaha05@gmail.com
+[GIN] 2024/01/24 - 22:28:15 | 200 |     1.392767s |             ::1 | POST     "/api/auth/login"
+2024/01/24 22:28:34 authentication.go:19: Error: No token provided, authentication cannot be done.
+[GIN] 2024/01/24 - 22:28:34 | 500 |       793.7µs |             ::1 | GET      "/api/notes/65b02581dec8a8c63d93187d/share"
+[GIN] 2024/01/24 - 22:29:13 | 404 |      1.4681ms |             ::1 | GET      "/api/notes/65b02581dec8a8c63d93187d/share"
+[GIN] 2024/01/24 - 22:30:14 | 404 |       433.8µs |             ::1 | GET      "/api/notes/65b02581dec8a8c63d93187d/share"
+2024/01/24 22:30:43 user_controller.go:573: Error: Problem while converting notes id to primitve object.
+	Error: the provided hex string is not a valid ObjectID
+[GIN] 2024/01/24 - 22:30:43 | 500 |      6.3356ms |             ::1 | POST     "/api/notes/65b02581dec8a8c63d93187d/share"
+2024/01/24 22:31:30 user_controller.go:573: Error: Problem while converting notes id to primitve object.
+	Error: the provided hex string is not a valid ObjectID
+[GIN] 2024/01/24 - 22:31:30 | 500 |      3.1534ms |             ::1 | POST     "/api/notes/65b02581dec8a8c63d93187d/share"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 22:32:07 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 22:32:16 user_controller.go:584: Error: Problem while finding the user data to whom the note is being shared.
+	Error: mongo: no documents in result
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 22:35:31 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 22:35:48 user_controller.go:518: Error: Problem while trying to find the note with note id: 65afd69410c57c29f1bc92be
+	Error: mongo: no documents in result
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 22:38:05 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 22:38:11 authentication.go:19: Error: No token provided, authentication cannot be done.
+[GIN] 2024/01/24 - 22:38:11 | 500 |            0s |             ::1 | POST     "/api/notes/65b02581dec8a8c63d93187d/share"
+2024/01/24 22:38:20 user_controller.go:573: Error: Problem while converting notes id to primitve object.
+	Error: the provided hex string is not a valid ObjectID
+[GIN] 2024/01/24 - 22:38:20 | 500 |     10.6967ms |             ::1 | POST     "/api/notes/65b02581dec8a8c63d93187d/share"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/24 22:39:54 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/24 22:40:03 user_controller.go:577: Error: Problem while finding the user data to whom the note is being shared.
+	Error: mongo: no documents in result
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 00:42:27 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 00:43:28 auth_controller.go:236: Message: Successful logging up of user with user id: 65b010c87be3477822c2b38c and user email id: ishansahaofficial@gmail.com
+[GIN] 2024/01/25 - 00:43:28 | 200 |    1.4249181s |             ::1 | POST     "/api/auth/login"
+2024/01/25 00:43:57 user_controller.go:572: Error: Receiver does not exist in the database./Problem while decodin the found data.
+	Error: mongo: no documents in result
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 00:45:10 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 00:45:19 user_controller.go:573: Error: Receiver does not exist in the database./Problem while decoding the found data.
+	Error: mongo: no documents in result
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 00:46:01 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 00:46:46 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 00:46:55 user_controller.go:524: Error: Sender and receiver cannot be same.
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 00:48:08 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 00:48:14 user_controller.go:633: Message: Successful creation of new note document with note id: ObjectID("65b16276aba823105d82406d")
+[GIN] 2024/01/25 - 00:48:14 | 200 |     46.4906ms |             ::1 | POST     "/api/notes/65b01fbd5c789224ddde9781/share"
+2024/01/25 00:49:02 user_controller.go:633: Message: Successful creation of new note document with note id: ObjectID("65b162a6aba823105d82406f")
+[GIN] 2024/01/25 - 00:49:02 | 200 |      5.1584ms |             ::1 | POST     "/api/notes/65b02581dec8a8c63d93187d/share"
+2024/01/25 00:51:08 user_controller.go:633: Message: Successful creation of new note document with note id: ObjectID("65b16324aba823105d824071")
+[GIN] 2024/01/25 - 00:51:08 | 200 |      4.5839ms |             ::1 | POST     "/api/notes/65b01fbd5c789224ddde9781/share"
+2024/01/25 00:51:33 user_controller.go:524: Error: Sender and receiver cannot be same.
+[GIN] 2024/01/25 - 00:51:33 | 400 |      1.5924ms |             ::1 | POST     "/api/notes/65b01fbd5c789224ddde9781/share"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 01:02:23 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 01:03:13 user_controller.go:524: Error: Sender and receiver cannot be same.
+[GIN] 2024/01/25 - 01:03:13 | 400 |      1.6224ms |             ::1 | POST     "/api/notes/65b01fbd5c789224ddde9781/share"
+2024/01/25 01:03:24 user_controller.go:644: Message: Successful creation of new note document with note id: ObjectID("65b1660495c021182ad20505")
+[GIN] 2024/01/25 - 01:03:24 | 200 |     20.9498ms |             ::1 | POST     "/api/notes/65b01fbd5c789224ddde9781/share"
+2024/01/25 01:03:36 user_controller.go:593: Error: User: 65afd69410c57c29f1bc92be already got a note with header: Test-Notes3
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 01:44:14 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 01:44:34 user_controller.go:730: Message: Successfully find all the notes with the keyword: si
+[GIN] 2024/01/25 - 01:44:34 | 200 |     44.3504ms |             ::1 | GET      "/api/search?q=si"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 01:48:28 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 01:48:57 user_controller.go:733: Message: Successfully find all the notes with the keyword: si
+[GIN] 2024/01/25 - 01:48:57 | 200 |     15.3785ms |             ::1 | GET      "/api/search?q=si"
+2024/01/25 01:49:00 user_controller.go:733: Message: Successfully find all the notes with the keyword: si
+[GIN] 2024/01/25 - 01:49:00 | 200 |      3.7821ms |             ::1 | GET      "/api/search?q=si"
+2024/01/25 01:49:01 user_controller.go:733: Message: Successfully find all the notes with the keyword: si
+[GIN] 2024/01/25 - 01:49:01 | 200 |      2.6871ms |             ::1 | GET      "/api/search?q=si"
+2024/01/25 01:49:02 user_controller.go:733: Message: Successfully find all the notes with the keyword: si
+[GIN] 2024/01/25 - 01:49:02 | 200 |      2.6822ms |             ::1 | GET      "/api/search?q=si"
+2024/01/25 01:49:14 user_controller.go:733: Message: Successfully find all the notes with the keyword: 
+[GIN] 2024/01/25 - 01:49:14 | 200 |      3.7309ms |             ::1 | GET      "/api/search?q"
+2024/01/25 01:49:19 user_controller.go:733: Message: Successfully find all the notes with the keyword: a
+[GIN] 2024/01/25 - 01:49:19 | 200 |      2.8473ms |             ::1 | GET      "/api/search?q=a"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 01:53:10 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 01:53:24 user_controller.go:733: Message: Successfully find all the notes with the keyword: sike
+[GIN] 2024/01/25 - 01:53:24 | 200 |     41.2391ms |             ::1 | GET      "/api/search?q=sike"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 02:00:50 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 02:01:00 user_controller.go:744: Error: No such note contained the passed keywords in it.
+[GIN] 2024/01/25 - 02:01:00 | 200 |     15.0949ms |             ::1 | GET      "/api/search?q=ike"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 02:01:34 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 02:01:50 user_controller.go:750: Message: Successfully find all the notes with the keyword: ike
+[GIN] 2024/01/25 - 02:01:50 | 200 |     13.5353ms |             ::1 | GET      "/api/search?q=ike"
+2024/01/25 02:01:57 user_controller.go:750: Message: Successfully find all the notes with the keyword: si
+[GIN] 2024/01/25 - 02:01:57 | 200 |      2.5484ms |             ::1 | GET      "/api/search?q=si"
+2024/01/25 02:02:01 user_controller.go:750: Message: Successfully find all the notes with the keyword: si
+[GIN] 2024/01/25 - 02:02:01 | 200 |      4.8673ms |             ::1 | GET      "/api/search?q=si"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 02:02:45 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 02:02:58 user_controller.go:733: Message: Successfully find all the notes with the keyword: si
+[GIN] 2024/01/25 - 02:02:58 | 200 |     12.1519ms |             ::1 | GET      "/api/search?q=si"
+2024/01/25 02:03:02 user_controller.go:733: Message: Successfully find all the notes with the keyword: sike
+[GIN] 2024/01/25 - 02:03:02 | 200 |      5.4997ms |             ::1 | GET      "/api/search?q=sike"
+2024/01/25 02:03:14 user_controller.go:733: Message: Successfully find all the notes with the keyword: nigga
+[GIN] 2024/01/25 - 02:03:14 | 200 |      6.1791ms |             ::1 | GET      "/api/search?q=nigga"
+2024/01/25 02:03:20 user_controller.go:733: Message: Successfully find all the notes with the keyword: nig
+[GIN] 2024/01/25 - 02:03:20 | 200 |       2.819ms |             ::1 | GET      "/api/search?q=nig"
+2024/01/25 02:03:24 user_controller.go:733: Message: Successfully find all the notes with the keyword: 69
+[GIN] 2024/01/25 - 02:03:24 | 200 |     17.5512ms |             ::1 | GET      "/api/search?q=69"
+2024/01/25 02:03:44 user_controller.go:733: Message: Successfully find all the notes with the keyword: sike nigga
+[GIN] 2024/01/25 - 02:03:44 | 200 |      5.9899ms |             ::1 | GET      "/api/search?q=sike%20nigga"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 02:04:33 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 02:04:45 user_controller.go:747: Message: Successfully find all the notes with the keyword: sike nigga
+[GIN] 2024/01/25 - 02:04:45 | 200 |     25.2644ms |             ::1 | GET      "/api/search?q=sike%20nigga"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 02:07:50 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 02:08:01 user_controller.go:715: Error: Problem while creating the cursor.
+	Error: (BadValue) unknown top level operator: $regex. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+[GIN] 2024/01/25 - 02:08:01 | 500 |     18.1628ms |             ::1 | GET      "/api/search?q=sike%20nigga"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 02:08:28 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 02:08:38 user_controller.go:715: Error: Problem while creating the cursor.
+	Error: (NoSuchKey) Missing expected field "$search"
+[GIN] 2024/01/25 - 02:08:38 | 500 |     19.0818ms |             ::1 | GET      "/api/search?q=sike%20nigga"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/auth/signup          --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.SignUp.func1 (3 handlers)
+[GIN-debug] POST   /api/auth/login           --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.AuthRoutes.Login.func2 (3 handlers)
+[GIN-debug] GET    /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetAllNotes.func3 (5 handlers)
+[GIN-debug] GET    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.GetNotesByID.func4 (5 handlers)
+[GIN-debug] POST   /api/notes                --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.CreateNotes.func5 (5 handlers)
+[GIN-debug] PUT    /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.UpdateNotesByID.func6 (5 handlers)
+[GIN-debug] DELETE /api/notes/:id            --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.DeleteNotesByID.func7 (5 handlers)
+[GIN-debug] POST   /api/notes/:id/share      --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.ShareNotesByID.func8 (5 handlers)
+[GIN-debug] GET    /api/search               --> github.com/IshanSaha05/jwt_authentication_rest_api/pkg/routes.NotesRoutes.SearchNotesByKeywords.func9 (5 handlers)
+2024/01/25 02:11:23 main.go:37: Message: Running the server at port: 9000
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :9000
+2024/01/25 02:11:30 user_controller.go:740: Error: No such note contained the passed keywords in it.
+[GIN] 2024/01/25 - 02:11:30 | 200 |     22.3447ms |             ::1 | GET      "/api/search?q=sike%20nigga"
+2024/01/25 02:11:38 user_controller.go:740: Error: No such note contained the passed keywords in it.
+[GIN] 2024/01/25 - 02:11:38 | 200 |      2.8641ms |             ::1 | GET      "/api/search?q=sike"
+2024/01/25 02:11:46 user_controller.go:746: Message: Successfully find all the notes with the keyword: ik
+[GIN] 2024/01/25 - 02:11:46 | 200 |      3.4808ms |             ::1 | GET      "/api/search?q=ik"
+2024/01/25 02:11:57 user_controller.go:740: Error: No such note contained the passed keywords in it.
+[GIN] 2024/01/25 - 02:11:57 | 200 |      3.4882ms |             ::1 | GET      "/api/search?q=sike"
+2024/01/25 02:13:00 user_controller.go:740: Error: No such note contained the passed keywords in it.
+[GIN] 2024/01/25 - 02:13:00 | 200 |      3.2932ms |             ::1 | GET      "/api/search?q=sik"
