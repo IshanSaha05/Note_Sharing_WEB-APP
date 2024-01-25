@@ -23,20 +23,26 @@ func GetAllNotes() gin.HandlerFunc {
 		userIdAny, exists := c.Get("userId")
 		if !exists {
 			c.JSON(http.StatusBadRequest, gin.H{"error": "Error: No user id present."})
-			logger.Log.Fatal("Error: No user id present.")
+			logger.Log.Print("Error: No user id present.")
+			c.Abort()
+			return
 		}
 
 		userId, ok := userIdAny.(string)
 		if !ok {
 			c.JSON(http.StatusInternalServerError, gin.H{"error:": "Error: Problem while converting user id to string."})
-			logger.Log.Fatal("Error: Problem while converting user if to string.")
+			logger.Log.Print("Error: Problem while converting user if to string.")
+			c.Abort()
+			return
 		}
 
 		// Get the note collection.
 		noteCollection, err := database.MongoObject.GetNoteCollection()
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Error: Problem while getting the note collection.\n\tError: %s", err.Error())})
-			logger.Log.Fatalf("Error: Problem while getting the note collection.\n\tError: %s", err)
+			logger.Log.Printf("Error: Problem while getting the note collection.\n\tError: %s", err)
+			c.Abort()
+			return
 		}
 
 		// Create a filter.
@@ -46,7 +52,9 @@ func GetAllNotes() gin.HandlerFunc {
 		cursor, err := noteCollection.Find(database.MongoObject.Ctx, filter)
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Error: Problem while creating cursor for the whole collection."})
-			logger.Log.Fatalf("Error: Problem while creating cursor for the whole collection.")
+			logger.Log.Printf("Error: Problem while creating cursor for the whole collection.")
+			c.Abort()
+			return
 		}
 		defer cursor.Close(database.MongoObject.Ctx)
 
@@ -60,7 +68,9 @@ func GetAllNotes() gin.HandlerFunc {
 
 			if err := cursor.Decode(&foundDocument); err != nil {
 				c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Error: Problem while decoding document.\n\tError: %s", err.Error())})
-				logger.Log.Fatalf("Error: Problem while decoding document.\n\tError: %s", err.Error())
+				logger.Log.Printf("Error: Problem while decoding document.\n\tError: %s", err.Error())
+				c.Abort()
+				return
 			}
 
 			if *foundDocument.User_Id == userId || *foundDocument.Sharable {
@@ -71,7 +81,9 @@ func GetAllNotes() gin.HandlerFunc {
 		// Check for any error during cursor iteration.
 		if err := cursor.Err(); err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Error: Problem while iterating through the collection using cursor.\n\tError: %s", err.Error())})
-			logger.Log.Fatalf("Error: Problem while iterating through the collection using cursor.\n\tError: %s", err.Error())
+			logger.Log.Printf("Error: Problem while iterating through the collection using cursor.\n\tError: %s", err.Error())
+			c.Abort()
+			return
 		}
 
 		// Send a response ok with the list of documents.
@@ -431,20 +443,26 @@ func DeleteNotesByID() gin.HandlerFunc {
 		userIdAny, exists := c.Get("userId")
 		if !exists {
 			c.JSON(http.StatusBadRequest, gin.H{"error": "Error: No user id given for authentication."})
-			logger.Log.Fatal("Error: No user id given for authentication.")
+			logger.Log.Print("Error: No user id given for authentication.")
+			c.Abort()
+			return
 		}
 
 		userId, ok := userIdAny.(string)
 		if !ok {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Error: Problem while converting user id from any to string."})
-			logger.Log.Fatal("Error: Problem while converting user id from any to string.")
+			logger.Log.Print("Error: Problem while converting user id from any to string.")
+			c.Abort()
+			return
 		}
 
 		// Get access to the user collection.
 		noteCollection, err := database.MongoObject.GetNoteCollection()
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Error: Problem while getting the note collection.\n\tError: %s", err.Error())})
-			logger.Log.Fatalf("Error: Problem while getting the note collection.\n\tError: %s", err.Error())
+			logger.Log.Printf("Error: Problem while getting the note collection.\n\tError: %s", err.Error())
+			c.Abort()
+			return
 		}
 
 		// Make the filter.
@@ -463,7 +481,9 @@ func DeleteNotesByID() gin.HandlerFunc {
 		err = noteCollection.FindOne(database.MongoObject.Ctx, filter).Decode(&foundNote)
 		if err != nil {
 			c.JSON(http.StatusBadRequest, gin.H{"error": fmt.Sprintf("Error: No such document with note id: %s found.\n\tError: %s", noteId, err.Error())})
-			logger.Log.Fatalf("Error: No such document with note id: %s found.\n\tError: %s", noteId, err.Error())
+			logger.Log.Printf("Error: No such document with note id: %s found.\n\tError: %s", noteId, err.Error())
+			c.Abort()
+			return
 		}
 
 		// If decoded userid is equivalent to the authenticated user id delete it and send status ok with the deleted notes details.
@@ -472,15 +492,18 @@ func DeleteNotesByID() gin.HandlerFunc {
 			_, err = noteCollection.DeleteOne(database.MongoObject.Ctx, filter)
 			if err != nil {
 				c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Error: Problem while deleting the note with note id: %s by the user with user id: %s.\n\tError: %s", noteId, userId, err.Error())})
-				logger.Log.Fatalf("Error: Problem while deleting the note with note id: %s by the user with user id: %s.\n\tError: %s", noteId, userId, err.Error())
+				logger.Log.Printf("Error: Problem while deleting the note with note id: %s by the user with user id: %s.\n\tError: %s", noteId, userId, err.Error())
+				c.Abort()
+				return
 			}
 
 			c.JSON(http.StatusOK, foundNote)
 			logger.Log.Printf("Message: Successfully deleted note with note id: %s by the user with user id: %s", noteId, userId)
-
 		} else {
 			c.JSON(http.StatusBadRequest, gin.H{"error": fmt.Sprintf("Error: User with user id: %s is not allowed to delete the notes with note id: %s", userId, noteId)})
-			logger.Log.Fatalf("Error: User with user id: %s is not allowed to delete the notes with note id: %s", userId, noteId)
+			logger.Log.Printf("Error: User with user id: %s is not allowed to delete the notes with note id: %s", userId, noteId)
+			c.Abort()
+			return
 		}
 	}
 }
@@ -728,7 +751,7 @@ func SearchNotesByKeywords() gin.HandlerFunc {
 			err := cursor.Decode(&foundNote)
 			if err != nil {
 				c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Error: Problem while decoding the found note.\n\tError: %s", err.Error())})
-				logger.Log.Fatalf("Error: Problem while decoding the found note.\n\tError: %s", err.Error())
+				logger.Log.Printf("Error: Problem while decoding the found note.\n\tError: %s", err.Error())
 			}
 
 			// Append each found note.
