@@ -702,7 +702,7 @@ func SearchNotesByKeywords() gin.HandlerFunc {
 				},
 				bson.D{{
 					Key: "notesData", Value: bson.D{{
-						Key: "$regex", Value: query,
+						Key: "$regex", Value: fmt.Sprintf(".*%s.*", query),
 					}},
 				}},
 			}},
